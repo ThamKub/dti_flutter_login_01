@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, sort_child_properties_last, unused_local_variable
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Login10UI extends StatefulWidget {
   const Login10UI({super.key});
@@ -140,6 +141,60 @@ class _Login10UIState extends State<Login10UI> {
                 ),
               ),
               margin: EdgeInsets.symmetric(horizontal: 20),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            
+            children: [
+              Container(
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 2,
+                      color: const Color.fromARGB(255, 205, 205, 205),
+                    ),
+                    borderRadius: BorderRadius.circular(80)),
+                child: Container(
+                  height: 30,
+                  width: 30,
+                  child: Image.asset(
+                    'assets/icon/google.png',
+                  ),
+                ),
+                margin: EdgeInsets.symmetric(horizontal: 10),
+              ),
+              Container(
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 2,
+                      color: const Color.fromARGB(255, 205, 205, 205),
+                    ),
+                    borderRadius: BorderRadius.circular(80)),
+                child: Container(
+                  height: 30,
+                  width: 30,
+                  child: Image.asset(
+                    'assets/icon/facebook.png',
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right: 30.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Text(
+                  'Forgot password ?',
+                  style: GoogleFonts.itim(fontWeight: FontWeight.w400),
+                )
+              ],
             ),
           ),
         ],

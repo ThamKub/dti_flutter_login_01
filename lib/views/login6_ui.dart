@@ -1,6 +1,8 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_local_variable
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_local_variable, unused_import
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Login6UI extends StatefulWidget {
   const Login6UI({super.key});
@@ -25,7 +27,7 @@ class _Login6UIState extends State<Login6UI> {
               padding: const EdgeInsets.only(left: 10.0),
               child: Text(
                 "Login Acoount  ",
-                style: TextStyle(
+                style: GoogleFonts.itim(
                   fontWeight: FontWeight.bold,
                   fontSize: 25,
                 ),
@@ -49,7 +51,7 @@ class _Login6UIState extends State<Login6UI> {
               padding: const EdgeInsets.only(left: 10.0),
               child: Text(
                 "Welcome back,Rohit thakur!",
-                style: TextStyle(fontSize: 15.0),
+                style: GoogleFonts.itim(fontSize: 15.0),
               ),
             ),
           ],
@@ -62,14 +64,14 @@ class _Login6UIState extends State<Login6UI> {
           children: [
             Text(
               "Mini ",
-              style: TextStyle(
+              style: GoogleFonts.itim(
                   fontWeight: FontWeight.bold,
                   fontSize: 50,
                   color: Color.fromARGB(255, 6, 0, 49)),
             ),
             Text(
               "Shop",
-              style: TextStyle(
+              style: GoogleFonts.itim(
                   fontWeight: FontWeight.bold,
                   fontSize: 50,
                   color: Color.fromARGB(255, 255, 214, 11)),
@@ -92,6 +94,7 @@ class _Login6UIState extends State<Login6UI> {
                 decoration: InputDecoration(
                   border: InputBorder.none,
                   hintText: "Enter email i'd",
+                  hintStyle: GoogleFonts.itim(),
                 ),
               ),
             ),
@@ -113,6 +116,7 @@ class _Login6UIState extends State<Login6UI> {
                 decoration: InputDecoration(
                   border: InputBorder.none,
                   hintText: "Enter password",
+                  hintStyle: GoogleFonts.itim(),
                 ),
               ),
             ),
@@ -128,7 +132,7 @@ class _Login6UIState extends State<Login6UI> {
             children: [
               Text(
                 'Forgot Password?',
-                style: TextStyle(fontWeight: FontWeight.w400),
+                style: GoogleFonts.itim(fontWeight: FontWeight.w400),
               )
             ],
           ),
@@ -147,7 +151,7 @@ class _Login6UIState extends State<Login6UI> {
             child: Center(
                 child: Text(
               'Login',
-              style: TextStyle(
+              style: GoogleFonts.itim(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
                 fontSize: 16,
@@ -193,7 +197,7 @@ class _Login6UIState extends State<Login6UI> {
                 height: 30,
                 width: 80,
                 child: Image.asset(
-                  'assets/icon/facebook1.png',
+                  'assets/icon/facebook.png',
                 ),
               ),
               margin: EdgeInsets.symmetric(horizontal: 10),
@@ -226,12 +230,12 @@ class _Login6UIState extends State<Login6UI> {
             children: [
               Text(
                 "Not register yet?",
-                style: TextStyle(
+                style: GoogleFonts.itim(
                     color: Colors.black45, fontWeight: FontWeight.w400),
               ),
               Text(
-                'Create Account',
-                style: TextStyle(
+                '  Create Account',
+                style: GoogleFonts.itim(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                     color: Colors.black),
@@ -259,7 +263,7 @@ class Login6 extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 10.0),
           child: Text(
             " Or Sign up with ",
-            style: TextStyle(
+            style: GoogleFonts.itim(
                 color: Color.fromARGB(255, 135, 135, 135),
                 fontWeight: FontWeight.w600),
           ),
